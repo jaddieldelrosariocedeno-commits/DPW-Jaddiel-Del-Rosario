@@ -1,0 +1,169 @@
+/* --- ESTILO NAVIDEÑO DOMINICANO --- */
+
+:root{
+  --bg:#041018;
+  --card:#0c2637;
+  --accent:#ff2b2b;
+  --accent2:#28ff68;
+  --gold:#ffd700;
+  --snow:rgba(255,255,255,0.08);
+  --glass:rgba(255,255,255,0.05);
+}
+
+*{
+  box-sizing:border-box;
+  font-family:'Segoe UI',Roboto,Arial,sans-serif;
+}
+
+body{
+  margin:0;
+  background: radial-gradient(circle at top, #0b1f33 0%, var(--bg) 70%);
+  color:#f7f7f7;
+}
+
+/* HEADER */
+header{
+  padding:30px 20px 15px;
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+.title-wrap{
+  display:inline-block;
+  padding:16px 30px;
+  border-radius:20px;
+  background:linear-gradient(90deg,#0d2c3e, #154a62);
+  box-shadow:0 8px 24px rgba(0,0,0,0.6);
+}
+
+h1{
+  margin:0;
+  font-size:40px;
+  letter-spacing:1px;
+  color:var(--gold);
+  text-shadow:0 0 10px rgba(255,215,0,0.6);
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+/* LUCECITAS */
+.lights{
+  display:flex;
+  gap:6px;
+  margin-right:10px;
+}
+.bulb{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  box-shadow:0 0 10px rgba(0,0,0,0.4);
+}
+.b1{background:var(--accent);animation:blink 1.4s infinite}
+.b2{background:var(--gold);animation:blink 1.2s infinite}
+.b3{background:var(--accent2);animation:blink 1.8s infinite}
+.b4{background:#3bb0ff;animation:blink 1.5s infinite}
+
+@keyframes blink{
+  0%{filter:brightness(.6)}
+  50%{filter:brightness(2)}
+  100%{filter:brightness(.6)}
+}
+
+/* MAIN */
+main{
+  padding:20px;
+  max-width:1100px;
+  margin:20px auto;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));
+  border-radius:14px;
+  padding:16px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.5);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.media{
+  border-radius:10px;
+  overflow:hidden;
+  background:#000;
+}
+
+.caption{
+  margin-top:10px;
+  font-size:14px;
+  color:#d8f1ff;
+}
+
+/* AUDIO LIST */
+.audio-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.audio-item{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding:10px;
+  background:var(--glass);
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.06);
+}
+.audio-item img{
+  width:70px;
+  height:70px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+/* TABLA */
+.card table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:10px;
+  color:#fff;
+}
+.card table th{
+  background:var(--accent);
+  padding:10px;
+  border:1px solid #000;
+  color:#fff;
+}
+.card table td{
+  background:#092432;
+  padding:10px;
+  border:1px solid #000;
+  color:#e6f7ff;
+}
+
+/* FOOTER */
+footer{
+  margin:40px 0 60px;
+  text-align:center;
+  opacity:0.8;
+  color:var(--gold);
+  font-weight:600;
+}
+
+/* RESPONSIVE */
+@media(max-width:520px){h1{font-size:26px}}
+
+/* NIEVE DECORATIVA */
+.snow svg circle{
+  animation:snowfall 6s linear infinite;
+}
+@keyframes snowfall{
+  from{transform:translateY(-10px)}
+  to{transform:translateY(110vh)}
+}
+/* --- FIN ESTILO NAVIDEÑO DOMINICANO --- */

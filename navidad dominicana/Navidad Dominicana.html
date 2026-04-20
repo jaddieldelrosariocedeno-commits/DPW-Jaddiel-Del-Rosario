@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Navidad Dominicana - Presentación</title>
+  <link rel="stylesheet" href="stylej.css" />
+</head>
+<body>
+  <div class="snow" aria-hidden>
+    <!-- Simple CSS snow using repeating-linear-gradient as decorative overlay -->
+    <svg width="100%" height="100%" style="position:fixed;left:0;top:0;pointer-events:none;z-index:0">
+      <defs>
+        <filter id="blur"><feGaussianBlur stdDeviation="1.2"/></filter>
+      </defs>
+      <g fill="white" opacity="0.08" filter="url(#blur)">
+        <!-- Several circles as snow -->
+        <circle cx="5%" cy="10%" r="1.6" />
+        <circle cx="15%" cy="40%" r="1.8" />
+        <circle cx="25%" cy="30%" r="1.2" />
+        <circle cx="40%" cy="60%" r="2" />
+        <circle cx="70%" cy="20%" r="1.5" />
+        <circle cx="85%" cy="55%" r="1.3" />
+      </g>
+    </svg>
+  </div>
+
+  <header>
+    <div class="title-wrap">
+      <h1>
+        <span class="lights" aria-hidden>
+          <span class="bulb b1"></span>
+          <span class="bulb b2"></span>
+          <span class="bulb b3"></span>
+          <span class="bulb b4"></span>
+          <span class="bulb b2"></span>
+          <span class="bulb b1"></span>
+        </span>
+        Navidad Dominicana
+      </h1>
+      <div style="font-size:13px; opacity:0.9; margin-top:6px">Música, videos y fotos </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <!-- Video 1 -->
+      <article class="card">
+        <div class="media">
+          <!-- Replace src with a YouTube video ID of a Dominican villancico or your local video file -->
+          <iframe width="100%" height="250" src="Campana Sobre Campana (Dembow remix).mp4" title="Video de Navidad Dominicana 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="caption">Campanas sobre Campanas (Dembow)</div>
+      </article>
+
+      <!-- Video 2 -->
+      <article class="card">
+        <div class="media">
+          <iframe width="100%" height="250" src="feliz navidad.mp4" title="Video de Navidad Dominicana 2" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="caption">Feliz Navidad (Dembow)</div>
+      </article>
+
+      <!-- Imagen destacada -->
+      <article class="card" style="text-align:center">
+        <img src="decoracion.jpeg" alt="Decoración navideña" style="width:100%;border-radius:8px;max-height:260px;object-fit:cover">
+        <div class="caption">Decoración navideña dominicana</div>
+      </article>
+
+      <!-- Lista de audios -->
+      <article class="card">
+        <h3 style="margin:0 0 8px">Audios navideños dominicanos</h3>
+        <div class="audio-list">
+          <!-- Audio item 1 -->
+          <div class="audio-item">
+            <img src="Captura de pantalla 2025-12-08 111852.png" alt="Portada">
+            <div style="flex:1">
+              <div style="font-weight:600">Volvio Juanita - Milly Quezada </div>
+              <div style="font-size:13px; opacity:0.9">Duración: 4:29</div>
+              <!-- Replace src with actual mp3 URL or local path -->
+              <audio controls style="width:100%; margin-top:6px">
+                <source src="Volvio Juanita - Milly Quezada (Merengue Navideño).mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+              </audio>
+            </div>
+          </div>
+
+          <!-- Audio item 2 -->
+          <div class="audio-item">
+            <img src="Captura de pantalla 2025-12-08 112603.png" alt="Portada 2">
+            <div style="flex:1">
+              <div style="font-weight:600">LOS HIJOS DEL REY, EL BURRO Y EL PAVO</div>
+              <div style="font-size:13px; opacity:0.9">Duración: 4:24</div>
+              <audio controls style="width:100%; margin-top:6px">
+                <source src="LOS HIJOS DEL REY, EL BURRO Y EL PAVOwmv.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+              </audio>
+            </div>
+          </div>
+
+          <!-- Instruction to replace -->
+           <!-- Audio item 3 -->
+          <div class="audio-item">
+            <img src="Captura de pantalla 2025-12-08 112938.png" alt="Portada 2">
+            <div style="flex:1">
+              <div style="font-weight:600">Kiko El Presidente - Traigo Un Ramillete</div>
+              <div style="font-size:13px; opacity:0.9">Duración: 4:56</div>
+              <audio controls style="width:100%; margin-top:6px">
+                <source src="Kiko El Presidente Traigo Un Ramillete.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+              </audio>
+            </div>
+          </div>
+       
+           <!-- Audio item 4 -->
+          <div class="audio-item">
+            <img src="Captura de pantalla 2025-12-08 112709.png" alt="Portada 2">
+            <div style="flex:1">
+              <div style="font-weight:600">Trulla Navideña - Conjunto Quisqueya</div>
+              <div style="font-size:13px; opacity:0.9">Duración: 5:19</div>
+              <audio controls style="width:100%; margin-top:6px">
+                <source src="Trulla Navideña - Conjunto Quisqueya (Merengue Navideño(1).mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+              </audio>
+            </div>
+          </div>
+          
+        </div>
+      </article>
+
+    
+
+  <section class="card" style="margin-top:18px">
+  <h3 style="margin:0 0 8px">Artistas y Canciones</h3>
+  <table style="width:100%; border-collapse:collapse; text-align:left">
+    <tr><th>Artista</th><th>Canción</th></tr>
+    <tr><td>Milly quezada</td><td>Volvió Juanita</td></tr>
+    <tr><td>Fernando villa lona</td><td>El Pato y el Burro</td></tr>
+    <tr><td>Quico el prsidente</td><td>Traigo un Ramillete</td></tr>
+    <tr><td>El conjunto quisqueya</td><td>Trulla Navideña</td></tr>
+  </table>
+</section>
+
+</main>
+
+  <footer>
+    &copy; Navidad Dominicana • Creado por jaddiel
+  </footer>
+
+  <script>
+    // Pequeña mejora: sustituye las URLs de video con IDs si el desarrollador quiere
+    (function(){
+      // Ejemplo: si quieres cargar un video de YouTube por ID reemplaza VIDEO_ID_1
+      const map = { VIDEO_ID_1: 'dQw4w9WgXcQ', VIDEO_ID_2: '3JZ_D3ELwOQ' };
+      document.querySelectorAll('iframe').forEach(iframe=>{
+        const src = iframe.getAttribute('src');
+        if(!src) return;
+        const newSrc = src.replace('VIDEO_ID_1', map.VIDEO_ID_1).replace('VIDEO_ID_2', map.VIDEO_ID_2);
+        iframe.setAttribute('src', newSrc);
+      });
+    })();
+  </script>
+</body>
+</html>
